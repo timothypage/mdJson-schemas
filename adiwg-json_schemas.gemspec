@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ADIWG::JsonSchemas::VERSION
   spec.authors       = ["Josh Bradley, Stan Smith"]
   spec.email         = ["jbradley@arcticlcc.org"]
-  spec.description   = %q{JSON schemas for validating according to the the ADIwg project and data metadata standard. The schemas comply with JSON Schema draft version 4.}
-  spec.summary       = %q{JSON schemas for the ADIwg metadata standard}
+  spec.description   = %q{Deprecated: use https://rubygems.org/gems/adiwg-mdjson_schemas}
+  spec.summary       = %q{Deprecated: use https://rubygems.org/gems/adiwg-mdjson_schemas}
   spec.homepage      = "https://github.com/adiwg/mdJson-schemas"
   spec.license       = "UNLICENSE"
 
@@ -22,4 +22,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", ">= 0"
   spec.add_development_dependency "json-schema", "~> 2.4.0"
   spec.add_development_dependency "minitest", "~>5"
+  spec.post_install_message = <<-MESSAGE
+      The 'adiwg-json_schemas' gem has been deprecated and has been replaced by 'adiwg-mdjson_schemas'.
+      See: https://rubygems.org/gems/adiwg-mdjson_schemas
+      And: https://github.com/adiwg/mdJson-schemas
+  MESSAGE
 end
