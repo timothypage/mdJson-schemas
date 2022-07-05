@@ -148,6 +148,16 @@
         "address": {
           "$ref": "#/definitions/address"
         },
+        "externalIdentifiers": {
+          "type": "array",
+          "description": "External Party Identifiers for the contact.",
+          "translation": {
+            "ISO 1911501": ["CI_ResponsibleParty > partyIdentifier"]
+          },
+          "items": {
+            "$ref": "identifier.json#"
+          }
+        },
         "onlineResource": {
           "type": "array",
           "description": "Information about accessing on-line resources and services. This may be a website, profile page, GitHub page, etc. related to the contact.",
